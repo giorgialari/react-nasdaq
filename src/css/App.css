@@ -1,0 +1,163 @@
+body {
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 200px;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App input, .App textarea, .App select {
+  display: inline;
+  padding: 10px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.nomestock {
+  padding: 10px;
+  background-color: #CCC;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  color: #000;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.bodystock {
+  margin: 0 5px;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #464646;
+}
+.cercaButton{
+  padding:10px 13px
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.stock {
+  color: #FFF;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.giallo {
+  color: #d8e707;
+}
+
+.bianco {
+  color: #FFF;
+}
+
+.col p {
+  color: #CCC;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.bs-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+[type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bs-switch input {
+  display: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.bs-switch input:checked+.slider {
+  background-color: #2196f3;
+}
+
+.bs-switch .slider.round {
+  -webkit-border-radius: 34px;
+  border-radius: 34px;
+}
+
+.bs-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.bs-switch .slider.round::before {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.bs-switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.bs-switch input:checked+.slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
